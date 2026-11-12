@@ -1,0 +1,96 @@
+@{
+    ViewData["Title"] = "Alugar";
+}
+
+<div class="container mt-5">
+    <h1>Alugar Carros</h1>
+    <p>Esta é a página de aluguer de veículos.</p>
+</div>
+
+<div class="container mt-4">
+
+    <div class="row justify-content-center g-4">
+
+        <!-- Primeiro cartão -->
+        <div class="col-md-4">
+            <div class="card">
+                <img class="Carro_comprar" src="~/images/BMW.png" alt="Fotografia de um carro">
+
+                <div class="card-body">
+                    <h5 class="card-title">BMW M6</h5>
+
+                    <button type="button"
+                            class="btn btn-outline-danger btn-favorito"
+                            data-carro="bmw-m6">
+                        ♡ Adicionar aos favoritos
+                    </button>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cilindrada: 4993 cm<sup>3</sup></li>
+                    <li class="list-group-item">Quilómetros: 129 542 Km</li>
+                    <li class="list-group-item">Preço Diário: 150&euro;</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Alugar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo cartão -->
+        <div class="col-md-4">
+            <div class="card">
+                <img class="Carro_comprar" src="~/images/Mercedes.png" alt="Fotografia de um carro">
+
+                <div class="card-body">
+                    <h5 class="card-title">Mercedes AMG GT 63</h5>
+
+                    <button type="button"
+                            class="btn btn-outline-danger btn-favorito"
+                            data-carro="mercedes">
+                        ♡ Adicionar aos favoritos
+                    </button>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cilindrada: 6435 cm<sup>3</sup></li>
+                    <li class="list-group-item">Quilómetros: 78 432 Km</li>
+                    <li class="list-group-item">Preço Diário: 270&euro;</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Alugar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terceiro cartão -->
+        <div class="col-md-4">
+            <div class="card">
+                <img class="Carro_comprar" src="~/images/SUV.png" alt="Fotografia de um carro">
+
+                <div class="card-body">
+                    <h5 class="card-title">FIAT SUV</h5>
+
+                    <button type="button"
+                            class="btn btn-outline-danger btn-favorito"
+                            data-carro="fiat">
+                        ♡ Adicionar aos favoritos
+                    </button>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cilindrada: 1765 cm<sup>3</sup></li>
+                    <li class="list-group-item">Quilómetros: 229 542 Km</li>
+                    <li class="list-group-item">Preço Diário: 100&euro;</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Alugar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

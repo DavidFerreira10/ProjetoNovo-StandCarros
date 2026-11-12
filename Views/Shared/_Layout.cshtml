@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetoNovo</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProjetoNovo.styles.css" asp-append-version="true" />
+</head>
+
+<!-- nav bar layout(every page)-->
+<body>
+    <header>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    AutoStand
+                </a>
+
+                <ul class="navbar-nav flex-row gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="Comprar" class="nav-link text-white">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="Vender" class="nav-link text-white">Vender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="Alugar" class="nav-link text-white">Alugar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!--Original
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - ProjetoNovo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>-->
+
+    <!-- footer retirado de -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <h5>AutoStand</h5>
+                <p class="text-white-50">
+                    Encontra o carro ideal para ti.
+                    Qualidade e confiança ao teu serviço.
+                </p>
+                
+                <h5>Outro Site</h5>
+                <p><a href="https://www.standvirtual.com">Verifica um exemplo de stands Online</a></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <h5>Contactos</h5>
+                <p class="text-white-50 mb-1">
+                    Email: contacto@autostand.pt
+                </p>
+                <p class="text-white-50 mb-1">
+                    Telefone: 912 345 678
+                </p>
+                <p class="text-white-50 mb-0">
+                    Localização: Portugal
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary">
+
+        <div class="text-center text-white-50">
+            <small>© 2026 AutoStand - Todos os direitos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,38 @@
+@using System.Runtime.InteropServices
+@model List<ProjetoNovo.Models.Carro>
+@{
+    ViewData["Title"] = "Vender";
+}
+
+<div class="container mt-5">
+    <h1>Vender Carros</h1>
+    <p>Escolha o(s) veículo(s) que deseja vender!</p>
+</div>
+
+
+
+<div class="container mt-5">
+
+    <div class="row mt-4">
+
+        @foreach (var carro in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@carro.nome</h5>
+
+                        <p class="card-text">
+                            Preço: @carro.preco.ToString("N2") €
+                        </p>
+
+                        <a href="#" class="btn btn-success btn-venda">
+                            Vender
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
