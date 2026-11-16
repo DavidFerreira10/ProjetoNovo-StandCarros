@@ -22,7 +22,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Vender()
+    public IActionResult Vender(string? marca)
     {
         var dados = new dadosViewModel
         {
@@ -45,16 +45,21 @@ public class HomeController : Controller
         };
         
 
-        /*List<Carro> carfilter = new List<Carro>();
-        
-        foreach (var carro in dados.Carros)
+        List<Carro> carfilter = new List<Carro>();
+
+        if (!string.IsNullOrWhiteSpace(marca))
         {
-            if(carro._nome == marca)
+            foreach (var carro in dados.Carros)
             {
-                carfilter.Add(carro);
+                if(carro._nome!.Contains(marca, StringComparison.OrdinalIgnoreCase))
+                {
+                    carfilter.Add(carro);
+                }
             }
+            dados.Carros = carfilter;
         }
-        dados.Carros = carfilter;*/
+        
+        
 
        
 
