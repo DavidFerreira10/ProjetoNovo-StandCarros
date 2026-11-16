@@ -94,4 +94,5 @@ C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\ref\ProjetoNovo.dl
 C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\compressed\lni83d7758-{0}-loo0rsl7qx-loo0rsl7qx.gz
 C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\compressed\vdtnkwc35z-{0}-loo0rsl7qx-loo0rsl7qx.gz
 C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\compressed\o5fjxq1wk1-{0}-n6sdzday7w-n6sdzday7w.gz
-C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\compressed\3oigoqmp1h-{0}-hfzezqcbyf-hfzezqcbyf.gz
+C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\ProjetoNovo.sourcelink.json
+C:\Users\bitss\Desktop\Treino_C\ProjetoNovo\obj\Debug\net10.0\compressed\3oigoqmp1h-{0}-v3kzuyr829-v3kzuyr829.gz
